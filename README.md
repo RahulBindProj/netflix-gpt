@@ -12,14 +12,14 @@
   - Sign / Signup Form
   - Redirect to Browser
 
-- Browse Page
+- Browse Page (after authentication)
 
   - Header
   - Main Movie
     - Trailer in BG.
     - Title & Description
     - Movie Suggestions
-      - MoviesList
+      - MoviesList \* N
 
 - NetflixGpt
   - Search Bar
