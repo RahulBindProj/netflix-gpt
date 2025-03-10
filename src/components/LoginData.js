@@ -2,19 +2,20 @@ import React, { useState, useRef } from "react";
 import { addUser } from "../utils/userSlice";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
+import Rating from "./Rating";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import { USER_AVATAR } from "../utils/constant";
 
 const Login = () => {
   const [isSingInForm, setIsSingInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
 
   const toggleSignInForm = () => {
@@ -47,8 +48,7 @@ const Login = () => {
 
           updateProfile(user, {
             displayName: name,
-            photoURL:
-              "https://img.freepik.com/fotos-premium/icone-de-ilustracao-de-desenho-animado-de-naruto_1070876-7005.jpg",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               // Profile updated!
@@ -62,8 +62,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              // console.log(user);
-              navigate("/browse");
             })
             .catch((error) => {
               setErrorMessage(error.message);
@@ -81,8 +79,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           // ...
-          console.log(user);
-          navigate("/browse");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -105,6 +101,10 @@ https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/
         onSubmit={(e) => e.preventDefault()}
         className="absolute  p-12 bg-black w-3/12 right-0 left-0 mx-auto my-36 text-white bg-opacity-70"
       >
+        <div>
+          <h1>Rate this Product</h1>
+          <Rating maxRating={5} />
+        </div>
         <h1 className="font-bold text-4xl py-4">
           {isSingInForm ? "SignIn" : "SignUp"}
         </h1>
