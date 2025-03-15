@@ -12,11 +12,3 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlZDFkZjIxY2ZkNDg2YmI0OGViNDhhZDhlMzU2NDM5ZiIsIm5iZiI6MTc0MDEyNTc2MS42MDUsInN1YiI6IjY3YjgzNjQxYTIyODQ2NjZmMWViNDE4NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.r3YA_9PV8SBYE1_EcbYGvEA-ZSUmexul6jlbea5SqbY",
   },
 };
-
-// fetch(
-//   "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1",
-//   options
-// )
-//   .then((res) => res.json())
-//   .then((res) => console.log(res))
-//   .catch((err) => console.error(err));
