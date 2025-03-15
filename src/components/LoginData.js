@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { addUser } from "../utils/userSlice";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
-import Rating from "./Rating";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -101,10 +100,6 @@ https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/
         onSubmit={(e) => e.preventDefault()}
         className="absolute  p-12 bg-black w-3/12 right-0 left-0 mx-auto my-36 text-white bg-opacity-70"
       >
-        <div>
-          <h1>Rate this Product</h1>
-          <Rating maxRating={5} />
-        </div>
         <h1 className="font-bold text-4xl py-4">
           {isSingInForm ? "SignIn" : "SignUp"}
         </h1>
