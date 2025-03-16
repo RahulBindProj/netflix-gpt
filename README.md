@@ -22,6 +22,14 @@
 - Add hardcoded values to the constant files (Headerlogo , userAvatar)
 - Register TMDB API & create an app to get the access token
 - Get data from TMDB now Playing movies list API
+- Custom Hook for now playing movies
+- Create moive slice
+- Update store with movies data
+- Planning for mainContainer and SecondrayContianer
+- fetch data for trailer video
+- updated the store with trailer video data
+- Embedded the youtube video and make it autoplay and mute
+- We added tailwind css to look main container awsome
 
 # Features
 
