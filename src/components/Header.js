@@ -46,23 +46,26 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-between">
-      <div className="header-wrap w-screen absolute px-8 py-2 bg-gradient-to-b from-black z-10">
+    <div className="relative w-full">
+      <div className="absolute top-0 left-0 w-full px-8 py-3 bg-gradient-to-b from-black z-10 flex items-center justify-between">
         <img className="w-44" src={LOGO} alt="logo" />
-      </div>
 
-      {user && (
-        <div className="flex z-50 right-3 absolute py-4">
-          <img
-            src={user?.photoURL}
-            className="w-12 h-12"
-            alt={user?.displayName}
-          />
-          <button className="text-white ml-4" onClick={handleSignOut}>
-            Sign Out
-          </button>
-        </div>
-      )}
+        {user && (
+          <div className="flex items-center space-x-4">
+            <img
+              src={user?.photoURL}
+              className="w-12 h-12 rounded border-2 border-none"
+              alt={user?.displayName}
+            />
+            <button
+              className="text-white font-medium hover:underline"
+              onClick={handleSignOut}
+            >
+              Sign Out
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

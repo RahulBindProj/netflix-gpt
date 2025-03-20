@@ -30,6 +30,11 @@
 - updated the store with trailer video data
 - Embedded the youtube video and make it autoplay and mute
 - We added tailwind css to look main container awsome
+- Build Secondary component
+- Built movie card
+- TMDB img CDN URL
+- Make the browse page look good
+- We had build and used our custom hooks (useNowPlayingMovies , usePopularMovies , useTopRatedMovies , useUpComingMovies)
 
 # Features
 
