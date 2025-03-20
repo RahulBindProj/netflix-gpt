@@ -10,6 +10,7 @@ import {
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { USER_AVATAR } from "../utils/constant";
+import { BG_URL } from "../utils/constant";
 
 const Login = () => {
   const [isSingInForm, setIsSingInForm] = useState(true);
@@ -92,7 +93,7 @@ const Login = () => {
       <Header />
       <div className="absolute inset-0 -z-10">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/web/US-en-20241008-TRIFECTA-perspective_428ffa03-8f7f-42b1-9739-f2cd5b7311a6_large.jpg"
+          src={BG_URL}
           className="w-full h-full object-cover"
           alt="Background"
         />

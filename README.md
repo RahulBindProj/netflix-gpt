@@ -35,6 +35,9 @@
 - TMDB img CDN URL
 - Make the browse page look good
 - We had build and used our custom hooks (useNowPlayingMovies , usePopularMovies , useTopRatedMovies , useUpComingMovies)
+- GPT Search Page
+- GPT Search Bar
+- (Bonus) Multilingual Feature in our APP
 
 # Features
 

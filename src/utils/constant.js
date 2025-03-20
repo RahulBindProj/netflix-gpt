@@ -13,3 +13,38 @@ export const API_OPTIONS = {
   },
 };
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w780/";
+
+export const BG_URL =
+  "https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/web/US-en-20241008-TRIFECTA-perspective_428ffa03-8f7f-42b1-9739-f2cd5b7311a6_large.jpg";
+
+export const SUPPORTED_LANGUAGES = [
+  { identifier: "en", name: "English" },
+  { identifier: "hindi", name: "Hindi" },
+  { identifier: "spanish", name: "Spanish" },
+  { identifier: "french", name: "French" },
+  { identifier: "german", name: "German" },
+  { identifier: "chinese", name: "Chinese" },
+  { identifier: "japanese", name: "Japanese" },
+  { identifier: "korean", name: "Korean" },
+  { identifier: "russian", name: "Russian" },
+  { identifier: "italian", name: "Italian" },
+  { identifier: "portuguese", name: "Portuguese" },
+  { identifier: "arabic", name: "Arabic" },
+  { identifier: "turkish", name: "Turkish" },
+  { identifier: "dutch", name: "Dutch" },
+  { identifier: "swedish", name: "Swedish" },
+  { identifier: "greek", name: "Greek" },
+  { identifier: "hebrew", name: "Hebrew" },
+  { identifier: "thai", name: "Thai" },
+  { identifier: "vietnamese", name: "Vietnamese" },
+  { identifier: "indonesian", name: "Indonesian" },
+  { identifier: "polish", name: "Polish" },
+  { identifier: "finnish", name: "Finnish" },
+  { identifier: "norwegian", name: "Norwegian" },
+  { identifier: "danish", name: "Danish" },
+  { identifier: "czech", name: "Czech" },
+  { identifier: "hungarian", name: "Hungarian" },
+  { identifier: "romanian", name: "Romanian" },
+  { identifier: "bulgarian", name: "Bulgarian" },
+  { identifier: "ukrainian", name: "Ukrainian" },
+];
